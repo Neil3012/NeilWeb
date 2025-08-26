@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista - Dynamic Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SheetJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <!-- Landing Section -->
+    <section id="landing" class="landing-section">
+        <div class="landing-content">
+            <div class="logo-container">
+                <div class="logo-animation">
+                    <h1 class="restaurant-name">Bella Vista</h1>
+                    <div class="logo-divider"></div>
+                    <p class="tagline">Fine Dining Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section hidden">
+        <div class="container">
+            <header class="menu-header">
+                <h2 class="menu-title">Our Menu</h2>
+                <p class="menu-subtitle">Crafted with passion, served with elegance</p>
+            </header>
+
+            <!-- Tabs -->
+            <nav class="menu-nav">
+                <button class="menu-tab active" data-category="appetizers">Appetizers</button>
+                <button class="menu-tab" data-category="mains">Main Courses</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="beverages">Beverages</button>
+            </nav>
+
+            <!-- Dynamic Menu Content -->
+            <div class="menu-content">
+                <div id="appetizers" class="menu-category active">
+                    <div class="menu-grid"></div>
+                </div>
+                <div id="mains" class="menu-category">
+                    <div class="menu-grid"></div>
+                </div>
+                <div id="desserts" class="menu-category">
+                    <div class="menu-grid"></div>
+                </div>
+                <div id="beverages" class="menu-category">
+                    <div class="menu-grid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
